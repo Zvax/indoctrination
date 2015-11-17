@@ -2,9 +2,12 @@
 
 namespace Model\Entities;
 
+/** @Entity @Table(name="products") */
 class Product {
 
+    /** @Id @Column(type="integer") @GeneratedValue */
     protected $id;
+    /** @Column(type="string") */
     protected $name;
 
     public function getId() {
